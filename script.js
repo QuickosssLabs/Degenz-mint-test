@@ -256,7 +256,7 @@ async function uploadToIPFS() {
                     
                     // Lien vers le NFT sur OpenSea
                     const openseaLink = document.createElement('a');
-                    openseaLink.href = `https://testnets.opensea.io/assets/base-sepolia/${contractAddress}/${uploadCount}`;
+                    openseaLink.href = `https://testnets.opensea.io/assets/base-sepolia/${contractAddress}/${uploadCount - 1}`;
                     openseaLink.target = "_blank";
                     openseaLink.textContent = "View your NFT on OpenSea";
                     openseaLink.style.display = "block";
