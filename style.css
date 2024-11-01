@@ -1,5 +1,5 @@
 body {
-    font-family: 'Press Start 2P', cursive; /* Remplace Arial par la nouvelle police */
+    font-family: 'Press Start 2P', cursive; 
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -12,7 +12,7 @@ body {
 /* Style pour le titre */
 h1 {
     text-align: center;
-    margin-bottom: 20px; /* Espacement en dessous du titre */
+    margin-bottom: 20px; 
     color: white;
 }
 
@@ -21,6 +21,7 @@ h1 {
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
+    flex-wrap: wrap; /* Permet aux éléments de passer à la ligne */
 }
 
 /* Style pour les boutons du menu */
@@ -85,42 +86,12 @@ canvas {
     margin-top: 20px;
     border: 2px solid #000;
     border-radius: 10px;
+    max-width: 100%; /* Assure que le canvas ne dépasse pas la largeur de l'écran */
+    height: auto; /* Maintient l'aspect ratio */
 }
 
-#randomizeBtn {
-    font-family: 'Press Start 2P', cursive;
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: #181736;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-
-#randomizeBtn:hover {
-    background-color: #272557;
-}
-
-/* Style pour le bouton de téléchargement */
-#downloadBtn {
-    font-family: 'Press Start 2P', cursive;
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: #181736;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-#downloadBtn:hover {
-    background-color: #272557;
-}
-
+#randomizeBtn,
+#downloadBtn,
 #mintNFTBtn {
     font-family: 'Press Start 2P', cursive;
     margin-top: 20px;
@@ -131,12 +102,14 @@ canvas {
     border-radius: 5px;
     font-size: 16px;
     cursor: pointer;
+    min-width: 120px; /* Assure une largeur minimale pour les boutons */
 }
 
+#randomizeBtn:hover,
+#downloadBtn:hover,
 #mintNFTBtn:hover {
     background-color: #272557;
 }
-
 
 .step {
     display: flex;
@@ -174,8 +147,8 @@ canvas {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Fond semi-transparent */
-    z-index: 1000; /* Assurez-vous que le fond est derrière le popup */
+    background: rgba(0, 0, 0, 0.5); 
+    z-index: 1000; 
 }
 
 .popup {
@@ -186,7 +159,23 @@ canvas {
     background: white;
     border: 2px solid #ccc;
     padding: 20px;
-    z-index: 1000;
+    z-index: 1001; 
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    z-index: 1001; /* Au-dessus de l'overlay */
+}
+
+/* Media Queries pour différentes tailles d'écran */
+@media (max-width: 768px) {
+    .dropbtn {
+        font-size: 14px; /* Réduit la taille du texte pour les petits écrans */
+        padding: 8px 16px; /* Ajuste le padding pour les petits écrans */
+    }
+    canvas {
+        margin-top: 15px; /* Réduit l'espacement pour les petits écrans */
+    }
+    #randomizeBtn,
+    #downloadBtn,
+    #mintNFTBtn {
+        font-size: 14px; /* Réduit la taille du texte pour les petits écrans */
+        padding: 8px 16px; /* Ajuste le padding pour les petits écrans */
+    }
 }
