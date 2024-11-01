@@ -1,0 +1,192 @@
+body {
+    font-family: 'Press Start 2P', cursive; /* Remplace Arial par la nouvelle police */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #2e2e2e;
+}
+
+/* Style pour le titre */
+h1 {
+    text-align: center;
+    margin-bottom: 20px; /* Espacement en dessous du titre */
+    color: white;
+}
+
+/* Alignement des menus côte à côte */
+.menu-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+/* Style pour les boutons du menu */
+.dropdown {
+    margin: 0 10px;
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    font-family: 'Press Start 2P', cursive;
+    background-color: #181736;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #3f3d8a;
+    font-size: 8px;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content .menu-item {
+    color: rgb(255, 255, 255);
+    padding: 12px 16px;
+    transition: font-size 0.2s ease, background-color 0.2s ease;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.dropdown-content .menu-item img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.dropdown-content .menu-item:hover {
+    background-color: #5551be;
+    font-size: 12px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #272557;
+}
+
+/* Centrer l'image dans le canvas */
+canvas {
+    margin-top: 20px;
+    border: 2px solid #000;
+    border-radius: 10px;
+}
+
+#randomizeBtn {
+    font-family: 'Press Start 2P', cursive;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #181736;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+#randomizeBtn:hover {
+    background-color: #272557;
+}
+
+/* Style pour le bouton de téléchargement */
+#downloadBtn {
+    font-family: 'Press Start 2P', cursive;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #181736;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#downloadBtn:hover {
+    background-color: #272557;
+}
+
+#mintNFTBtn {
+    font-family: 'Press Start 2P', cursive;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #181736;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#mintNFTBtn:hover {
+    background-color: #272557;
+}
+
+
+.step {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.loader {
+    border: 2px solid #f3f3f3;
+    border-top: 2px solid #3498db;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+    animation: spin 1s linear infinite;
+}
+
+.checkmark {
+    margin-left: 10px;
+    color: green;
+}
+
+.error {
+    color: red;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Fond semi-transparent */
+    z-index: 1000; /* Assurez-vous que le fond est derrière le popup */
+}
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    border: 2px solid #ccc;
+    padding: 20px;
+    z-index: 1000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 1001; /* Au-dessus de l'overlay */
+}

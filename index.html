@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creator Tool</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ethers/5.2.0/ethers.umd.min.js" type="application/javascript"></script>
+    
+</head>
+<body>
+    <!-- Titre de la page -->
+    <h1>Degenz traits builder <br> Testnet Base Sepolia</h1>
+
+    <!-- Conteneur des menus -->
+    <div class="menu-container">
+        <!-- Menus dynamiques ajoutés par JavaScript -->
+    </div>
+
+    <!-- Canvas pour afficher le personnage -->
+    <canvas id="characterCanvas" width="520" height="520"></canvas>
+
+    <!-- Bouton de téléchargement et de randomisation -->
+    <button id="randomizeBtn">Randomized</button>
+    <div><button id="downloadBtn">Download</button>
+    <button id="mintNFTBtn">Mint NFT</button></div>
+    <p id="mintLimitMessage"></p>
+    <p id="totalMintedDisplay">Total NFTs Minted: 0 / 69</p>
+
+    <div id="popupOverlay" class="overlay" style="display: none;"></div>
+    <div id="mintingPopup" class="popup" style="display: none;">
+        <div class="popup-content">
+            <span class="close" id="closePopup">&times;</span>
+            <h2>Minting Process</h2>
+            <ul id="mintingSteps">
+                <li>
+                    <span class="step-indicator" id="uploadingImageIndicator"></span>
+                    Uploading Image...
+                </li>
+                <li>
+                    <span class="step-indicator" id="uploadingMetadataIndicator"></span>
+                    Uploading Metadata...
+                </li>
+                <li>
+                    <span class="step-indicator" id="mintingIndicator"></span>
+                    Minting NFT...
+                </li>
+            </ul>
+            <!-- Bouton pour fermer le popup après le mint -->
+            <button id="closePopupButton" style="display: none; margin-top: 20px;">Close</button>
+        </div>
+    </div>
+    
+
+    <script src="script.js"></script>
+    <script src="mint.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+{
+    "background": [
+      { "name": "Blue", "value": "blue", "img": "images/background/blue.png" },
+      { "name": "Gold", "value": "gold", "img": "images/background/gold.png" },
+      { "name": "Red", "value": "red", "img": "images/background/red.png" }
+    ],
+    "type": [
+      { "name": "Human", "value": "human", "img": "images/type/human.png" },
+      { "name": "Bot", "value": "bot", "img": "images/type/bot.png" },
+      { "name": "Skeleton", "value": "skeleton", "img": "images/type/skeleton.png" },
+      { "name": "Ghost", "value": "ghost", "img": "images/type/ghost.png" },
+      { "name": "Zombie", "value": "zombie", "img": "images/type/zombie.png" },
+      { "name": "Ape", "value": "ape", "img": "images/type/ape.png" },
+      { "name": "Alien", "value": "alien", "img": "images/type/alien.png" }
+    ],
+    "glasses": [
+      { "name": "3D Glasses", "value": "3D Glasses", "img": "images/glasses/3D Glasses.png" },
+      { "name": "Blue Noon", "value": "Blue Noon", "img": "images/glasses/Blue Noon.png" },
+      { "name": "Futuristic Glasses", "value": "Futuristic Glasses", "img": "images/glasses/Futuristic Glasses.png" },
+      { "name": "None", "value": "None", "img": "images/glasses/None.png" }
+    ],
+    "tophead": [
+      { "name": "Black Crest", "value": "Black Crest", "img": "images/TopHead/Black Crest.png" },
+      { "name": "Blue Cap", "value": "Blue Cap", "img": "images/TopHead/Blue Cap.png" },
+      { "name": "Blue Chemist Hair", "value": "Blue Chemist Hair", "img": "images/TopHead/Blue Chemist Hair.png" },
+      { "name": "Brown Fedora", "value": "Brown Fedora", "img": "images/TopHead/Brown Fedora.png" },
+      { "name": "Devil Horns", "value": "Devil Horns", "img": "images/TopHead/Devil Horns.png" },
+      { "name": "Dreadlocks", "value": "Dreadlocks", "img": "images/TopHead/Dreadlocks.png" },
+      { "name": "Gaming Headset", "value": "Gaming Headset", "img": "images/TopHead/Gaming Headset.png" },
+      { "name": "Halo Angel", "value": "Halo Angel", "img": "images/TopHead/Halo Angel.png" },
+      { "name": "None", "value": "None", "img": "images/TopHead/None.png" },
+      { "name": "Police Cap", "value": "Police Cap", "img": "images/TopHead/Police Cap.png" }
+    ],
+    "neck": [
+      { "name": "Blue Scarf", "value": "Blue Scarf", "img": "images/neck/Blue Scarf.png" },
+      { "name": "Cape", "value": "Cape", "img": "images/neck/Cape.png" },
+      { "name": "Gold Chain", "value": "Gold Chain", "img": "images/neck/Gold Chain.png" },
+      { "name": "None", "value": "None", "img": "images/neck/None.png" }
+    ]
+  }
+  
